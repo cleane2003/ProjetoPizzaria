@@ -16,13 +16,13 @@ export class Order {
   @Column()
   table: number;
 
-  @Column()
+  @Column({ default: false })
   status: boolean;
 
-  @Column()
+  @Column({ default: true })
   draft: boolean;
 
-  @Column()
+  @Column({ nullable: true })
   name: string;
 
   @UpdateDateColumn()

@@ -27,9 +27,6 @@ export class Product {
   @Column()
   banner: string;
 
-  @Column()
-  category_id: number;
-
   @UpdateDateColumn()
   updatedAt: Date;
 

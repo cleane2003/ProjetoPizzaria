@@ -7,7 +7,7 @@ import { OrderItem } from './entities/OrderItem';
 import { Product } from './entities/Product';
 import { User } from './entities/User';
 
-const port = process.env.DB_PORT as number | undefined;
+const port = process.env.DB_PORT as unknown as number | undefined;
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
